@@ -38,7 +38,7 @@ namespace AssemblyAnalyzer
         private static void DisplayHelp()
         {
             var help = "Produces a list of assemblies with their CPU architectures in given path."
-                       + " This can be useful when trying to determine wheather an IIS site, "
+                       + " This can be useful when trying to determine whether an IIS site, "
                        + "windows service or application requires 64-bit capability or not.";
             Console.Write(help);
             Console.WriteLine();
