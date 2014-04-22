@@ -1,0 +1,6 @@
+C:\Repositories\DotNet\Utilities\AssemblyAnalyzer\AssemblyAnalyzer\bin\Debug\AssemblyAnalyzer.exe
+C:\Repositories\DotNet\Utilities\AssemblyAnalyzer\AssemblyAnalyzer\bin\Debug\AssemblyAnalyzer.pdb
+C:\Repositories\DotNet\Utilities\AssemblyAnalyzer\AssemblyAnalyzer\obj\x86\Debug\AssemblyAnalyzer.csprojResolveAssemblyReference.cache
+C:\Repositories\DotNet\Utilities\AssemblyAnalyzer\AssemblyAnalyzer\obj\x86\Debug\AssemblyAnalyzer.exe
+C:\Repositories\DotNet\Utilities\AssemblyAnalyzer\AssemblyAnalyzer\obj\x86\Debug\AssemblyAnalyzer.pdb
+C:\Repositories\DotNet\Utilities\AssemblyAnalyzer\AssemblyAnalyzer\bin\Debug\AssemblyAnalyzer.exe.config
