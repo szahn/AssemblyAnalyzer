@@ -46,18 +46,30 @@ namespace AssemblyAnalyzer
                 Console.Write(pair.Value.Filename);
             }
             Console.WriteLine();
-            Console.WriteLine();
 
             var x64Count = list.Count(l =>
                     l.Value.Architecture == ProcessorArchitecture.Amd64 ||
                     l.Value.Architecture == ProcessorArchitecture.IA64);
+
+            var x86Count = list.Count(l =>
+                    l.Value.Architecture == ProcessorArchitecture.X86);
+
             if (x64Count > 0)
             {
-                Console.Write("Path contains x64 (64-bit) libraries.");
+                Console.WriteLine("Path contains x64 (64-bit) libraries.");
             }
-            else
+
+            if (x86Count > 0)
             {
-                Console.Write("Path contains x86 (32-bit) libraries.");
+                Console.WriteLine("Path contains x86 (32-bit) libraries.");
+            }
+
+            if (x86Count > 0 && x64Count > 0)
+            {
+                var foreground = Console.ForegroundColor;
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("There were x86 and x64 assemblies detected. You should not mix x64 and x86 libraries.");
+                Console.ForegroundColor = foreground;
             }
         }
     }
